@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Jeongmin Shin — CV / Research / Publications" />
+  <meta property="og:title" content="Jeongmin Shin — CV" />
+  <meta property="og:description" content="Smartphone R&D (Samsung MX) • PIM/SoC architecture • Digital Custom IP" />
+  <meta property="og:type" content="website" />
+  <title>Jeongmin Shin — CV</title>
+  <style>
+    :root{
+      --bg:#0b0f14; --card:rgba(255,255,255,.06); --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68); --border:rgba(255,255,255,.12);
+      --accent:#6ee7ff; --accent2:#a78bfa; --shadow:0 18px 60px rgba(0,0,0,.35);
+      --radius:18px; --maxw:1020px;
+    }
+    [data-theme="light"]{
+      --bg:#f7f8fb; --card:rgba(0,0,0,.04); --text:rgba(0,0,0,.92);
+      --muted:rgba(0,0,0,.62); --border:rgba(0,0,0,.10);
+      --accent:#0077ff; --accent2:#7c3aed; --shadow:0 18px 60px rgba(0,0,0,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(110,231,255,.18), transparent 55%),
+        radial-gradient(900px 600px at 85% 18%, rgba(167,139,250,.16), transparent 60%),
+        var(--bg);
+      color:var(--text); line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.9}
+    .container{width:min(var(--maxw), 92vw); margin: 36px auto 80px;}
+    header{display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:16px;}
+    .brand{display:flex; gap:14px; align-items:center;}
+    .avatar{
+      width:56px; height:56px; border-radius:16px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: var(--shadow); flex:0 0 auto;
+    }
+    h1{font-size:28px; margin:0 0 6px}
+    .tagline{color:var(--muted); margin:0}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:14px; margin-top:8px}
+    .meta a{border-bottom:1px dashed transparent}
+    .meta a:hover{border-bottom-color:var(--border)}
+    .top-actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .btn{
+      border:1px solid var(--border); background:var(--card); color:var(--text);
+      padding:10px 12px; border-radius:999px; cursor:pointer; font-size:14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.10);
+    }
+    .btn.primary{
+      border-color:transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0b0f14; font-weight:650;
+    }
+    nav{display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 0;}
+    .grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; margin-top:16px;}
+    @media (max-width: 900px){ header{flex-direction:column} .grid{grid-template-columns:1fr} }
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px;}
+    .section-title{display:flex; align-items:center; justify-content:space-between; margin:0 0 10px; font-size:16px; letter-spacing:.2px;}
+    .pill{font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); background: rgba(255,255,255,.03);}
+    .item{padding:12px 0; border-top:1px solid var(--border);}
+    .item:first-of-type{border-top:none; padding-top:0}
+    .item h3{margin:0 0 4px; font-size:15px}
+    .when{color:var(--muted); font-size:13px}
+    ul{margin:8px 0 0 18px}
+    li{margin:4px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .chip{padding:7px 10px; border-radius:999px; border:1px solid var(--border); background: rgba(255,255,255,.03); font-size:13px;}
+    .kicker{font-size:13px; color:var(--muted); margin:0 0 10px}
+    footer{margin-top:22px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+    code.inline{padding:.15rem .35rem; border:1px solid var(--border); border-radius:8px; background: rgba(255,255,255,.04); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    @media print{
+      body{background:#fff !important; color:#000 !important}
+      .btn, nav{display:none !important}
+      .card{box-shadow:none !important}
+      a{color:#000 !important}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Jeongmin Shin</h1>
+          <p class="tagline">Smartphone R&D (Samsung MX) • PIM / SoC Architecture • Digital Custom IP</p>
+          <div class="meta">
+            <span>📍 Suwon-si, Gyeonggi-do, Republic of Korea</span>
+            <span>•</span>
+            <a href="tel:+821026274147">+82-10-2627-4147</a>
+            <span>•</span>
+            <a href="mailto:jm33.shin@samsung.com">jm33.shin@samsung.com</a>
+            <span>•</span>
+            <a href="mailto:hotdog4147@naver.com">hotdog4147@naver.com</a>
+          </div>
+          <nav>
+            <a class="btn" href="#experience">Experience</a>
+            <a class="btn" href="#publications">Publications</a>
+            <a class="btn" href="#research">Research</a>
+            <a class="btn" href="#awards">Awards</a>
+            <a class="btn" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button class="btn" id="themeBtn" type="button">🌓 Theme</button>
+        <button class="btn" type="button" onclick="window.print()">🖨️ Print/PDF</button>
+        <a class="btn primary" href="./Jeongmin_Shin_CV.pdf" target="_blank" rel="noreferrer">Download CV (PDF)</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <h2 class="section-title">About <span class="pill">CV website</span></h2>
+        <p class="kicker">
+          I work in the AP technical team for Galaxy smartphones at Samsung Electronics (MX Division),
+          and my research background is in low-power PIM/SoC architecture for 3D point cloud matching.
+        </p>
+
+        <section id="experience">
+          <h2 class="section-title">Professional Experience</h2>
+
+          <div class="item">
+            <h3>Samsung Electronics (MX Division) — Engineer, AP Technical Team</h3>
+            <div class="when">Jul. 2024 – Present</div>
+            <ul>
+              <li>Validation and performance analysis for Samsung LSI’s AP (Galaxy S26 AP technical team).</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>UNIST — Teaching Assistant (Electrical Engineering)</h3>
+            <div class="when">2022 / 2024</div>
+            <ul>
+              <li><b>Digital Logic and Laboratory (2022):</b> Digital circuit design at simulation & FPGA level.</li>
+              <li><b>VLSI Design (2024):</b> Digital circuit design using Synopsys Design Compiler / IC Compiler (Samsung 28nm).</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Republic of Korea Army — IT Specialist & Signal Officer</h3>
+            <div class="when">Mar. 2020 – Jun. 2022</div>
+            <ul>
+              <li>IT Specialist Officer, ROK Army Logistics Command (Nov. 2020 – Jun. 2022): Army logistics data management using SQL.</li>
+              <li>Dispatched to ROK-US Combined Forces Command (Jul. 2021 – Aug. 2021): Battle simulation for CCPT training.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>LG Electronics (Yangjae R&D Campus) — Internship / Industry-Academia Project</h3>
+            <div class="when">Jan. 2019 – Feb. 2019 / Oct. 2018 – May. 2019</div>
+            <ul>
+              <li>Built a C software framework for a mobile web browser to block harmful sites.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="publications" style="margin-top:16px;">
+          <h2 class="section-title">Publications</h2>
+
+          <div class="item">
+            <h3>Journal Papers</h3>
+            <ul>
+              <li><b>IM-NN:</b> A Low-power 3D Point Clouds Matching Processor with 1D-CNN Prediction and CAM-based In-memory kNN Searching, <i>IEEE TCAS-I</i>. (Jeongmin Shin, et al.)</li>
+              <li>A 701.7 TOPS/W Compute-in-Memory Processor With Time-Domain Computing for Spiking Neural Network, <i>IEEE TCAS-I</i>. (Keonhee Park, et al.)</li>
+              <li>An Energy-Efficient Processor for Real-Time Semantic LiDAR SLAM in Mobile Robots, <i>IEEE JSSC</i>. (Jueun Jung, et al.)</li>
+              <li>HYTEC: Compact and Energy-Efficient Analog-Digital Hybrid CIM With Transpose Ternary eDRAM, <i>IEEE JSSC</i>. (Hoichang Jeong, et al.)</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Conference Papers</h3>
+            <ul>
+              <li>A Low-power 3D Point Clouds Matching Processor with 1D-CNN Prediction and CAM-based In-memory kNN Searching, <i>IEEE AICAS 2024</i>. (Jeongmin Shin, et al.)</li>
+              <li>A 0.81 mJ/frame, Real-time LiDAR Odometry and Mapping Processor with Memory-efficient kNN and Reconfigurable Architecture, <i>ESSERC 2024</i>. (Seungbin Kim, et al.)</li>
+              <li>A 273.48 TOPS/W and 1.58 Mb/mm² Analog-Digital Hybrid CIM Processor with Transpose Ternary-eDRAM Bitcell, <i>A-SSCC 2024</i>. (Hoichang Jeong, et al.)</li>
+              <li>LSPU: A Fully-Integrated Real-Time LiDAR-SLAM SoC with Point-Neural-Network Segmentation and Multi-level kNN Acceleration, <i>ISSCC 2024</i>. (Jueun Jung, et al.)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="research" style="margin-top:16px;">
+          <h2 class="section-title">Major Research Experience</h2>
+
+          <div class="item">
+            <h3>ML / AI Algorithms</h3>
+            <ul>
+              <li>Online incremental learning SVM (LG Electronics × Kwangwoon Univ. industry-university project).</li>
+              <li>Invented 1D-CNN using temporal/spatial locality in 3D point clouds to predict memory allocation (TCAS-I).</li>
+              <li>Invented an on-chip clustering algorithm considering data distribution (TCAS-I).</li>
+              <li>Developed an algorithm to track memory allocation via hash page-based memory management per LiDAR frame (ISSCC’24).</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>System-on-Chip Design</h3>
+            <ul>
+              <li>PIM architect for 3D point matching processor using CAM-based in-memory kNN searching (TCAS-I).</li>
+              <li>System architect for 3D point matching processor with hash page-based MMU (ISSCC’24).</li>
+              <li>Participated in 3 MPWs over 2 years; digital custom IP design.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Computer Architecture</h3>
+            <ul>
+              <li>5-stage pipeline 32-bit RISC core with full hazard handling; verified with Verilog testbench simulation.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="awards" style="margin-top:16px;">
+          <h2 class="section-title">Awards</h2>
+          <div class="item">
+            <ul>
+              <li>Demonstration Session Award, IEEE ISSCC 2024 (Feb. 2025)</li>
+              <li>Best Student Paper Award, IEEE AICAS 2024 (Apr. 2024)</li>
+              <li>Full Scholarship for Graduate Student (M.S.) (Aug. 2022 – Aug. 2024)</li>
+              <li>ROK Army Headquarters Deputy Chief of Staff for Logistics Award (Dec. 2021)</li>
+              <li>Most Improved Student Award, Software Convergence University, Kwangwoon Univ. (Sep. 2018)</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <aside style="display:flex; flex-direction:column; gap:16px;">
+        <section class="card">
+          <h2 class="section-title">Education</h2>
+          <div class="item">
+            <h3>UNIST — M.S. in Electrical Engineering</h3>
+            <div class="when">Aug. 2022 – Aug. 2024 • Full Scholarship</div>
+            <div class="muted">Advisor: Kyuho Jason Lee</div>
+            <ul>
+              <li>Research: low-power 3D point matching processor; HW-SW co-design; reducing external memory access; PIM for searching/clustering; digital custom IP design.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Kwangwoon University — B.S. in Computer Engineering</h3>
+            <div class="when">Mar. 2016 – Feb. 2020</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Skills</h2>
+          <p class="kicker">Quick snapshot (expand as needed):</p>
+          <div class="chips">
+            <span class="chip">Verilog HDL</span>
+            <span class="chip">C/C++</span>
+            <span class="chip">Synopsys DC</span>
+            <span class="chip">Synopsys ICC (P&amp;R)</span>
+            <span class="chip">PIM / CIM</span>
+            <span class="chip">SoC Architecture</span>
+            <span class="chip">Point Cloud / LiDAR</span>
+          </div>
+          <p class="muted" style="margin:10px 0 0;">English: competent</p>
+        </section>
+
+        <section class="card" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <p class="muted" style="margin:0 0 10px;">
+            If you’d like to discuss research/roles, email is best.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <a class="btn" href="mailto:jm33.shin@samsung.com?subject=Hello%20Jeongmin&body=Hi%20Jeongmin%2C%0A%0AI%20saw%20your%20CV%20website%20and%20wanted%20to%20reach%20out...">✉️ Email (work)</a>
+            <a class="btn" href="mailto:hotdog4147@naver.com?subject=Hello%20Jeongmin&body=Hi%20Jeongmin%2C%0A%0AI%20saw%20your%20CV%20website%20and%20wanted%20to%20reach%20out...">✉️ Email (personal)</a>
+            <a class="btn" href="tel:+821026274147">📞 Call</a>
+          </div>
+          <p class="muted" style="margin:12px 0 0;">
+            Tip: you can hide phone/email by deleting those lines if you want a “public-safe” version.
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <span>© <span id="year"></span> Jeongmin Shin</span>
+      <span class="muted">Single-file static site • GitHub Pages / Vercel ready</span>
+    </footer>
+  </div>
+
+  <script>
+    const themeBtn = document.getElementById('themeBtn');
+    const saved = localStorage.getItem('theme');
+    if (saved) document.body.setAttribute('data-theme', saved);
+
+    themeBtn.addEventListener('click', () => {
+      const cur = document.body.getAttribute('data-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
